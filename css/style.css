@@ -48,9 +48,95 @@
   grid-column: 2/-1;
 }
 
+.battle-right {
+  background-color: #101D2C;
+  grid-column: 7/-1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 0 6vw;
+}
+.battle-right h4 {
+  font-size: 1.7rem;
+  font-weight: 300;
+  line-height: 2.1rem;
+  letter-spacing: 0.3rem;
+  color: #61A568;
+}
+.battle-right h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 4rem;
+  color: #F5F5F5;
+  margin-bottom: 3rem;
+}
+.battle-right p {
+  font-size: 1.6rem;
+  color: #F5F5F5;
+  margin-bottom: 4rem;
+}
+
+.uselikebutton {
+  color: #F5F5F5;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 1.5rem 3rem;
+  background-color: #61A568;
+  transition: 0.5s;
+}
+.uselikebutton:hover {
+  background-color: #425844;
+}
+
 .cards {
-  background-color: blue;
+  padding: 15rem 0;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-column: 3/-2;
+  grid-gap: 4rem 6rem;
+}
+
+.card {
+  position: relative;
+  background-color: #101D2C;
+  display: grid;
+  grid-template-rows: 3fr repeat(2, 1fr) 0.5fr;
+  grid-template-columns: repeat(2, 1fr);
+}
+.card p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #F5F5F5;
+}
+.card .img {
+  grid-column: 1/-1;
+  width: 100%;
+  height: 100%;
+}
+.card a {
+  grid-column: 1/-1;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.card-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 1.5rem 0;
+  background-color: #61A568;
+  position: absolute;
+  color: #F5F5F5;
+  top: 20rem;
+  left: 4rem;
+  right: 4rem;
+}
+
+.card-money, .card-player, .card-price, .card-monitor {
+  text-align: center;
 }
 
 .header-left {
@@ -91,8 +177,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: left;
-  padding: 0 8rem;
+  align-items: start;
+  padding: 0 6vw;
 }
 .battle-right h4 {
   font-size: 1.7rem;
@@ -113,14 +199,18 @@
   color: #F5F5F5;
   margin-bottom: 4rem;
 }
-.battle-right a {
-  max-width: 23rem;
+
+.uselikebutton {
   color: #F5F5F5;
   font-size: 1.6rem;
   font-weight: 700;
   text-decoration: none;
   padding: 1.5rem 3rem;
   background-color: #61A568;
+  transition: 0.5s;
+}
+.uselikebutton:hover {
+  background-color: #425844;
 }
 
 * {
