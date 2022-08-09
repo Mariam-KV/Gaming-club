@@ -1,3 +1,32 @@
+@import "_variables.sass"
 .footer
-    background-color: coral
+    border-top: 1px solid $color-gray
+    text-align: center
+    background-color: $color-black
     grid-column: 2/-1
+
+
+    grid-column-gap: 4rem
+   
+    img
+        display: block
+        margin: 0 auto
+        padding-top: 4rem
+    a 
+        text-decoration: none
+        font-size: 1.6rem
+        font-weight: 300
+        line-height: 2rem
+        
+        color: $color-white
+        transition: 0.6s
+        &:hover
+            color: $color-light-green
+    ul
+        padding: 4rem 0
+        list-style: none
+        display: grid
+        grid-template-columns: repeat(auto-fit,minmax(20rem,1fr))
+
+
+
