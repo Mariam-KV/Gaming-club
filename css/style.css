@@ -1,0 +1,145 @@
+.sidebar {
+  background-color: #425844;
+  grid-column: 1/2;
+  grid-row: 1/-1;
+}
+
+.infos {
+  grid-column: 3/-2;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 3rem;
+  grid-column-gap: 4rem;
+  padding: 15rem 0;
+  align-items: start;
+}
+
+.title3 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  line-height: 2.3rem;
+  color: #425844;
+}
+
+.info {
+  display: grid;
+  grid-template-rows: min-content min-content;
+  grid-template-columns: min-content 1fr;
+  grid-gap: 1.5rem 2.5rem;
+}
+.info img {
+  grid-row: 1/3;
+}
+.info p {
+  color: #425844;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+
+.gallery {
+  background-color: pink;
+  grid-column: 2/-1;
+}
+
+.footer {
+  background-color: coral;
+  grid-column: 2/-1;
+}
+
+.cards {
+  background-color: blue;
+  grid-column: 3/-2;
+}
+
+.header-left {
+  background-color: yellow;
+  grid-column: 2/9;
+}
+
+.header-right {
+  background-color: gray;
+  grid-column: 9/-1;
+}
+
+.battle-left {
+  background-color: orange;
+  grid-column: 2/7;
+  background: url("/images/Rectangle 5.png") center/cover no-repeat;
+  position: relative;
+}
+.battle-left .photo {
+  position: absolute;
+  width: 70%;
+  height: 55%;
+}
+
+.six {
+  top: 6.5rem;
+  left: 11rem;
+}
+
+.seven {
+  top: 20rem;
+  left: 26rem;
+}
+
+.battle-right {
+  background-color: #101D2C;
+  grid-column: 7/-1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding: 0 8rem;
+}
+.battle-right h4 {
+  font-size: 1.7rem;
+  font-weight: 300;
+  line-height: 2.1rem;
+  letter-spacing: 0.3rem;
+  color: #61A568;
+}
+.battle-right h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 4rem;
+  color: #F5F5F5;
+  margin-bottom: 3rem;
+}
+.battle-right p {
+  font-size: 1.6rem;
+  color: #F5F5F5;
+  margin-bottom: 4rem;
+}
+.battle-right a {
+  max-width: 23rem;
+  color: #F5F5F5;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 1.5rem 3rem;
+  background-color: #61A568;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 5rem;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #E5E5E5;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 80vh min-content 40vw min-content min-content min-content;
+  grid-template-columns: 8rem minmax(4rem, 1fr) repeat(8, minmax(min-content, 14rem)) minmax(4rem, 1fr);
+}/*# sourceMappingURL=style.css.map */
