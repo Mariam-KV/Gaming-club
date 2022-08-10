@@ -6,7 +6,7 @@
     grid-column: 1/8
     background: url("/images/gallery/Rectangle 3.png") center/cover no-repeat
     position: relative
-    grid-template-columns: repeat(1fr)
+    grid-template-columns: minmax(5rem,1fr)
     grid-template-rows: repeat(3,1fr)
     .footerOfHeader
         grid-row: 3/4
@@ -15,7 +15,7 @@
         display: grid
         grid-gap: 2rem
      
-        grid-template-columns: repeat(auto-fit,minmax(15rem,1fr))
+        grid-template-columns: repeat(auto-fit,minmax(10rem,1fr))
         justify-items: center
         
     h1
