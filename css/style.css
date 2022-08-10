@@ -401,20 +401,22 @@ p {
 .battle-left {
   grid-column: 1/6;
   background: url("/images/Rectangle 5.png") center/cover no-repeat;
-  position: relative;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
 }
 .battle-left .photo {
-  position: absolute;
-  width: 70%;
-  height: 55%;
+  width: 100%;
+  height: 100%;
 }
-
-.six {
-  transform: translate(10rem, 7rem);
+.battle-left .six {
+  grid-column: 3/11;
+  grid-row: 2/8;
 }
-
-.seven {
-  transform: translate(25rem, 20rem);
+.battle-left .seven {
+  grid-column: 5/13;
+  grid-row: 5/11;
+  transform: translateX(4rem);
 }
 
 .battle-right {
@@ -521,5 +523,22 @@ body {
   .info p {
     font-size: 2.5rem;
     line-height: 2.7rem;
+  }
+  .battle-left {
+    grid-column: 1/-1;
+  }
+  .battle-left .six {
+    grid-column: 3/8;
+    grid-row: 2/9;
+  }
+  .battle-left .seven {
+    grid-column: 6/11;
+    grid-row: 5/12;
+  }
+  .battle-right {
+    grid-column: 1/-1;
+  }
+  .battle-right p {
+    font-size: 2.5rem;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -1,14 +1,18 @@
 .battle-left
     grid-column: 1/6
     background: url("/images/Rectangle 5.png") center/cover no-repeat
-    position: relative
+    display: grid
+    grid-template-columns: repeat(12,1fr)
+    grid-template-rows: repeat(12,1fr)
     .photo
-        position: absolute
-        width: 70%
-        height: 55%
-.six
-    transform: translate(10rem,7rem)
+        width: 100%
+        height: 100%
+    .six
+        grid-column: 3/11
+        grid-row: 2/8 
+    .seven
+        grid-column: 5/13
+        grid-row: 5/11
+        transform: translateX(4rem) 
 
-.seven
-    transform: translate(25rem,20rem)
    
