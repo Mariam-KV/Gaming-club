@@ -22,8 +22,9 @@ body
     background-color: #E5E5E5 
 .container
     display: grid
-    grid-template-rows: 80vh min-content 40vw min-content min-content min-content
+    grid-template-rows: 80vh min-content 40vw max-content min-content min-content
     grid-template-columns: minmax(4rem,1fr) repeat(8,minmax(min-content,14rem)) minmax(4rem,1fr) 
+
 
 
 
@@ -33,21 +34,29 @@ body
 
 @media (max-width : 800px)
     .container
-        grid-template-rows: 80vh min-content min-content 40vw min-content min-content min-content
+        grid-template-rows: 80vh min-content min-content 60vw  min-content min-content min-content
     .header-left,.header-right
         
         grid-column: 1/-1
-    .header-right
     
+       
+       
+       
+      
+        
+            
+        
+        
    
 
         grid-gap: 3rem
         img
-            width: 15rem
-            height: 15rem
+            margin-right: 1rem
             
         .title4
+            text-align: center
             font-size: 4.5rem
+            
         p
             font-size: 2.5rem
         h5
