@@ -494,6 +494,10 @@ html {
   font-size: 62.5%;
 }
 
+.tocenter .title4 {
+  line-height: 1.5;
+}
+
 body {
   background-color: #E5E5E5;
 }
