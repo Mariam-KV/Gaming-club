@@ -26,6 +26,27 @@ body
     display: grid
     grid-template-rows: 80vh min-content 40vw max-content min-content min-content
     grid-template-columns: minmax(4rem,1fr) repeat(8,minmax(min-content,14rem)) minmax(4rem,1fr) 
+.spinner 
+  height: 100vh
+  color: $color-light-green !important
+  display: flex
+  justify-content: center
+  align-items: center
+  svg 
+        height: 6rem
+        width: 6rem
+        fill: $color-light-green
+        animation: rotate 2s infinite linear
+
+@keyframes rotate 
+  0% 
+    transform: rotate(0)
+  
+
+  100% 
+    transform: rotate(360deg)
+
+
 
 
    
